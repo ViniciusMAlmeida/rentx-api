@@ -6,7 +6,6 @@ API para alugel de carros.
 
 **Requisitos Funcionais** <br>
 Deve ser possível cadastrar um carro. <br>
-Deve ser possível listar todas as categorias. <br>
 
 **Requisitos não Funcionais**
 
