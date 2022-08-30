@@ -41,7 +41,6 @@ O usuário responsável pelo cadastro de ser um usuário administrador. <br>
 
 **Requisitos Funcionais** <br>
 Deve ser possível cadastrar a imagem do carro. <br>
-Deve ser possível listar todos os carros. <br>
 
 **Requisitos não funcionais** <br>
 Deve ser utilizado o multer para upload de arquivos.
