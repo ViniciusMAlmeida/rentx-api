@@ -3,6 +3,7 @@ import fs from "fs";
 import { inject, injectable } from "tsyringe";
 
 import { CategoriesRepository } from "@modules/cars/infra/typeorm/repositories/CategoriesRepository";
+import { AppError } from "@shared/errors/AppError";
 
 interface IImportCategory {
     name: string;
@@ -41,7 +42,10 @@ class ImportCategoryUseCase {
                 });
         });
     }
-    async execute(file: Express.Multer.File): Promise<void> {
+    async execute(file: Express.Multer.File | undefined): Promise<void> {
+        if (!file) {
+            throw new AppError("File is missing");
+        }
         const categories = await this.loadCategories(file);
 
         categories.forEach(async (category) => {
