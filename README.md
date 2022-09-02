@@ -59,6 +59,7 @@ Deve ser possível cadastrar um alugel de carro. <br>
 O alugel deve ter duração mínima de 24 horas. <br>
 Não de deve ser possível caso já exista um aberto para o mesmo usuário. <br>
 Não de deve ser possível caso já exista um aberto para o mesmo carro. <br>
+O usuário deve estar logado na aplicação. <br>
 
 # Cadastro de usuário
 
