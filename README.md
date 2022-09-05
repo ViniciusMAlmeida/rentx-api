@@ -60,6 +60,7 @@ O alugel deve ter duração mínima de 24 horas. <br>
 Não de deve ser possível caso já exista um aberto para o mesmo usuário. <br>
 Não de deve ser possível caso já exista um aberto para o mesmo carro. <br>
 O usuário deve estar logado na aplicação. <br>
+Ao realizar um alugel, a situação do carro deve ser alterada para indisponível. <br>
 
 # Cadastro de usuário
 
@@ -68,3 +69,16 @@ Deve ser possível cadastrar um usuário. <br>
 
 **Regras de negócio** <br>
 Não de deve ser possível cadastrar caso já exista um usuário com email já existente. <br>
+
+# Devolução de carro
+
+**Requisitos Funcionais** <br>
+Deve ser possível fazer a devolução do carro. <br>
+
+**Regras de negócio** <br>
+Se o carro for devolvido com menos de 24h, deverá ser cobrado diária completa. <br>
+Ao realizar a devolução, o carro deverá ser liberado para outro aluguel. <br>
+Ao realizar a devolução, o usuário deverá ser liberado para outro aluguel. <br>
+Ao realizar a devolução, deverá ser calculado o total do aluguel. <br>
+Caso o horário de devolução seja superior ao horário previsto de entrega, deverá ser cobrado multa proporcional aos dias de atraso. <br>
+Caso haja multa, deverá ser somado ao total do alugel. <br>
