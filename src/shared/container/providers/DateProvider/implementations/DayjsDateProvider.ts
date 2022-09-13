@@ -37,7 +37,7 @@ class DayjsDateProvider implements IDateProvider {
     }
 
     dateToString(date: Date): string {
-        return dayjs(date).toString();
+        return dayjs(date).toISOString();
     }
 }
 
