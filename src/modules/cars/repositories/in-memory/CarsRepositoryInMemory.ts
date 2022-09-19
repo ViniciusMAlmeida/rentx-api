@@ -26,7 +26,7 @@ class CarsRepositoryInMemory implements ICarsRepository {
             fine_amount,
             brand,
             category_id,
-            id,
+            id: id ?? car.id,
         });
 
         this.cars.push(car);
