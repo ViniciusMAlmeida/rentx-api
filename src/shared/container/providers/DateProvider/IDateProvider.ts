@@ -6,6 +6,7 @@ interface IDateProvider {
     compareInDays(start_date: Date, end_date: Date): number;
     stringToDate(date: string): Date;
     dateToString(date: Date): string;
+    addHours(hours: number): Date;
 }
 
 export { IDateProvider };
