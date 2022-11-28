@@ -7,6 +7,7 @@ interface IDateProvider {
     stringToDate(date: string): Date;
     dateToString(date: Date): string;
     addHours(hours: number): Date;
+    compareIfBefore(start_date: Date, end_date: Date): boolean;
 }
 
 export { IDateProvider };
