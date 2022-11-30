@@ -51,6 +51,7 @@ class AuthenticateUserUseCase {
             expires_in_refresh_token,
             expire_refresh_token_days,
         } = auth;
+
         const token = sign({}, secret_token, {
             subject: user.id,
             expiresIn: expires_in_token,
