@@ -1,7 +1,8 @@
 node_modules
 coverage
 dist
-tmp/*
+tmp/avatar/*
+tmp/cars/*
 !tmp/avatar/.gitkeep
 !tmp/cars/.gitkeep
 .env
